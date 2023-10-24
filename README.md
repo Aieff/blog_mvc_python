@@ -3,3 +3,4 @@
 - Python Language
 - Django Framework
 - Database SQLite
+- Criação do ambiente virtual (Venv)
