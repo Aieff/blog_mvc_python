@@ -1,0 +1,81 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Games Hunter</title>
+    <link rel="stylesheet" href="{% static "/home.css" %}">
+</head>
+<body>
+
+{% include "base_templates/header.html" %}
+
+    <main>
+
+        <section id="destaque">
+            <h1>Games Hunter</h1>
+            <p>Seu portal para as últimas novidades, análises e dicas sobre jogos de todos os gêneros e plataformas.</p>
+            <!-- Adicione imagens, vídeos ou conteúdo em destaque aqui -->
+        </section>
+
+      <h2>Últimos Lançamentos</h2>
+
+        <section id="jogos" class="jogos-container">
+            <div class="jogo">
+                <img src="{% static "img/banner-spider-man.jfif" %}" alt="Spider-Man 2">
+                <h3>Spider-Man 2</h3>
+                <p class="descricao">Marvel's Spider-Man 2 é um jogo exclusivo para PlayStation 5 que será lançado em 20 de outubro de 2023. A história continua os eventos dos jogos anteriores e mostra o retorno de Harry Osborn, recém curado de uma misteriosa doença. Tudo leva a crer que a cura tem a ver com o simbionte Venom, que em algum momento vai parar em Peter Parker.</p>
+                <p>O jogo é uma evolução da história do Spider-Man, e o incrível poder do simbionte obriga Peter e Miles a encarar um desafio sem igual que vai muito além de seus alter egos mascarados, já que precisam encontrar o equilíbrio entre vidas pessoais, amizades e o dever de proteger quem precisa.</p>
+            </div>
+
+            <div class="jogo">
+                <img src="{% static "img/banner-god-of-war.jfif" %}" alt="God of War Ragnarok">
+                <h3>God of War: Ragnarok</h3>
+                <p class="descricao">O tão aguardado God of War: Ragnarok está chegando e mais do que nunca os fãs estão muito animados para o game. Mais novidades sobre o lançamento surgiram após a mudança de sua descrição na PS Store. Entre os principais detalhes, temos basicamente uma confirmação de que iremos nos 9 reinos com Kratos.</p>
+            </div>
+            
+            <div class="jogo">
+                <img src="{% static "img/banner-horizon-zero-dawn.jfif" %}" alt="Horizon Zero Dawn">
+                <h3>Horizon Zero Dawn Forbidden West</h3>
+                <p class="descricao">Horizon Forbidden West continua a história de Aloy cerca de seis meses após os eventos de Horizon Zero Dawn. No jogo, acompanhamos a jovem guerreira conforme ela é enviada para investigar uma misteriosa peste está se espalhando e afetando toda a vida orgânica no mundo, inclusive próximo à tribo Nora.</p>
+                <p>Ela então deve viajar pela costa do Pacífico, no território conhecido como Oeste Proibido, em busca de respostas. Em sua viagem, Aloy precisa enfrentar novos inimigos, além de grandes tempestades que destroem tudo em seu caminho. Nos novos locais, a guerreira também encontra vários ecossistemas diferentes, como grandes cidades abandonadas, desertos, vales, montanhas cheias de neve e mais.</p>
+            </div>
+
+            <div class="jogo">
+                <img src="{% static "img/banner-the-last-of-us-2.png" %}" alt="The Last of Us II">
+                <h3>The Last of Us Part II</h3>
+                <p class="descricao">The Last of Us: Part II se passa 5 anos após os eventos do primeiro jogo. Joel e Ellie vivem em Jackson, uma comunidade de sobreviventes. Logo percebemos que Ellie carrega alguns traumas do final do primeiro jogo, sua personalidade está mais introspectiva e sua relação com Joel parece abalada. A rotina deles é interrompida de forma trágica quando Joel é assassinado com requintes de crueldade, despertando em Ellie um forte desejo de vingança. Apesar de decepcionar alguns fãs, a morte prematura de Joel serve de pretexto para a existência do jogo.</p>
+                <p>O desenvolvimento da história acontece em dois atos. No primeiro ato acompanhamos a jornada de Ellie em busca de vingança; no segundo ato percorremos a mesma linha do tempo na perspectiva da antagonista, Abby, em absoluta simetria, mostrando as motivações da nova personagem e gerando empatia com o jogador.</p>
+            </div>
+
+            <div class="jogo">
+                <iframe width="825" height="500" src="https://www.youtube.com/embed/3FwLWwWvNes?si=8Yr3BCoe-XfJsNWb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>God of War Ragnarok Official Story Trailer (4K) | State of Play 2022</h3>
+                <p class="descricao">Parta em uma jornada épica e inabalável enquanto Kratos e Atreus lutam para se segurar e se soltar.</p><br>
+                <p>Testemunhe a dinâmica de mudança do seu relacionamento enquanto se preparam para a guerra; Atreus anseia por conhecimento que o ajude a compreender a profecia de “Loki”, enquanto Kratos luta para se libertar do passado e ser o pai que seu filho precisa. O tempo todo, os olhos de Asgard observam cada movimento seu.</p><br>
+                <p>God of War Ragnarök chegará ao PS4 e PS5 em 9 de novembro.</p><br>
+                <p><strong>#GodofWar</strong> <strong>#DeusdaGuerra</strong></p><br>
+            </div>
+
+            <div class="jogo">
+                <iframe width="825" height="500" src="https://www.youtube.com/embed/7ksH7-9vWZ0?si=Dnr3r_RTwBKV8KVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>The Last of Us Part II - Trailer Oficial de Lançamento | PS4</h3>
+                <p class="descricao">The Last of Us Part II chega para PS4 em 19 de junho de 2020.</p><br>
+                <p>Enquanto Ellie busca vingança após um evento traumático, ela deve enfrentar as devastadoras repercussões físicas e emocionais de suas ações.</p><br>
+                <p>Saiba mais em www.thelastofus.com</p><br>
+                <p><strong>#TheLastOfUsPartII</strong> <strong>#TLOU2NoPS4</strong></p><br>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Games Hunter é uma plataforma dedicada a oferecer conteúdo de qualidade sobre o mundo dos jogos. Estamos comprometidos em trazer notícias, análises, e dicas para os entusiastas de jogos de todas as idades.</p>
+        </section>
+
+    </main>
+
+{% include "base_templates/footer.html" %}
+
+</body>
+</html>
