@@ -1,0 +1,35 @@
+{% load static %}
+{% block content %}
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static "/register.css" %}">
+<div class="main-content center container">
+    <h2>Register</h2>
+</div>
+<div class="main-content container">
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        <div class="form-content form-content-grid">
+            {% for field in form %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{field}}
+
+                {% if field.help_text %}
+                <p class="help-text">{{ field.help_text }}</p>
+                {% endif %}
+
+                {{ field.errors }}
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="form-group">
+            <a href="/" class="btn-login">Login</a>
+            <button class="btn-py" type="submit">Cadastrar</button>
+        </div>
+    </form>
+</div>
+
+{% endblock content %}
